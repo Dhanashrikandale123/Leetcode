@@ -1,0 +1,29 @@
+One of the built-in functions of Python is divmod, which takes two arguments a and b and returns a tuple containing the quotient of a/b first and then the remainder a.
+
+For example:
+
+>>> print divmod(177,10)
+(17, 7)
+Here, the integer division is 177/10 => 17 and the modulo operator is 177%10 => 7.
+
+Input Format
+The first line contains the first integer, , and the second line contains the second integer, .
+
+Output Format
+Print the result as described above.
+
+Sample Input
+
+177
+10
+Sample Output
+
+17
+7
+(17, 7)
+
+
+code:
+a,b=int(input()),int(input())
+res,res1=a//b,a%b
+print(res,res1,divmod(a,b),sep="\n")
